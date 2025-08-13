@@ -1,0 +1,154 @@
+:root {
+    --bg: #F5F3F0;
+    --card: #fff;
+    --text: #3E2F2F;
+    --accent: #D4A373;
+    --muted: #7A6A60;
+    --radius: 18px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, system-ui, Segoe UI, Arial;
+    background: linear-gradient(180deg, var(--bg), #f7efe6);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app {
+    width: 100%;
+    max-width: 420px;
+    background: transparent;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin: 0
+}
+
+.card {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 26px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.verse-card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.verse-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    line-height: 1.12;
+}
+
+.verse-ref {
+    color: var(--muted);
+    font-size: 14px
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+    align-items: center
+}
+
+.btn {
+    border: none;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 600
+}
+
+.btn.ghost {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid rgba(0, 0, 0, 0.06)
+}
+
+.devotional {
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 14px
+}
+
+nav.bottom {
+    display: flex;
+    gap: 8px;
+    margin-top: 14px;
+    justify-content: space-between
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px 8px;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 12px
+}
+
+/* lists */
+.list {
+    display: grid;
+    gap: 12px;
+    margin-top: 12px
+}
+
+.list-item {
+    background: var(--card);
+    padding: 14px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04)
+}
+
+.item-ref {
+    font-size: 13px;
+    color: var(--muted)
+}
+
+/* small devices */
+@media(max-width:420px) {
+    body {
+        padding: 14px
+    }
+
+    .verse-text {
+        font-size: 20px
+    }
+}
+
+/* dark mode (simple) */
+.dark {
+    --bg: #1F1B1B;
+    --card: #121212;
+    --text: #FFFBEA;
+    --muted: #CFC6B8;
+    --accent: #B8844A
+}
