@@ -8,12 +8,12 @@
 }
 
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 html,
 body {
-    height: 100%
+    height: 100%;
 }
 
 body {
@@ -39,13 +39,29 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 12px
+    margin-bottom: 12px;
 }
 
 header h1 {
     font-family: 'Playfair Display', serif;
     font-size: 20px;
-    margin: 0
+    margin: 0;
+}
+
+.header-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.titulos {
+    margin-top: 0;
+}
+
+.controles{
+    display:flex;
+    gap:8px;
+    margin-top:12px;
 }
 
 .card {
@@ -69,13 +85,13 @@ header h1 {
 
 .verse-ref {
     color: var(--muted);
-    font-size: 14px
+    font-size: 14px;
 }
 
 .controls {
     display: flex;
     gap: 8px;
-    align-items: center
+    align-items: center;
 }
 
 .btn {
@@ -84,26 +100,29 @@ header h1 {
     border-radius: 12px;
     background: var(--accent);
     color: #fff;
-    font-weight: 600
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .btn.ghost {
     background: transparent;
     color: var(--text);
-    border: 1px solid rgba(0, 0, 0, 0.06)
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    cursor: pointer;
 }
 
 .devotional {
     margin-top: 18px;
     color: var(--muted);
-    font-size: 14px
+    font-size: 14px;
 }
 
 nav.bottom {
     display: flex;
     gap: 8px;
     margin-top: 14px;
-    justify-content: space-between
+    justify-content: space-between;
+    cursor: pointer;
 }
 
 .tab {
@@ -111,36 +130,36 @@ nav.bottom {
     text-align: center;
     padding: 10px 8px;
     background: rgba(0, 0, 0, 0.02);
-    border-radius: 12px
+    border-radius: 12px;
 }
 
 /* lists */
 .list {
     display: grid;
     gap: 12px;
-    margin-top: 12px
+    margin-top: 12px;
 }
 
 .list-item {
     background: var(--card);
     padding: 14px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04)
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
 }
 
 .item-ref {
     font-size: 13px;
-    color: var(--muted)
+    color: var(--muted);
 }
 
 /* small devices */
 @media(max-width:420px) {
     body {
-        padding: 14px
+        padding: 14px;
     }
 
     .verse-text {
-        font-size: 20px
+        font-size: 20px;
     }
 }
 
@@ -150,5 +169,5 @@ nav.bottom {
     --card: #121212;
     --text: #FFFBEA;
     --muted: #CFC6B8;
-    --accent: #B8844A
+    --accent: #B8844A;
 }
