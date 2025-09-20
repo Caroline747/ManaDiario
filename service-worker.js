@@ -1,7 +1,7 @@
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open('gv-v1').then((cache) => cache.addAll([
-      '/', '/index.html', '/manifest.json', '/icons/icon-192.png', '/icons/icon-512.png'
+      '/', '/index.html', '/manifest.json', '/icon512_maskable.png', '/icon512_rounded.png'
     ])).then(() => self.skipWaiting())
   );
 });
