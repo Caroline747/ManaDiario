@@ -299,7 +299,7 @@ installBtn.addEventListener("click", async () => {
   }
 })();
 
-// ...existing code...
+
 const logoutBtn = document.getElementById("logoutBtn");
 logoutBtn.addEventListener("click", () => {
   if (confirm("Deseja realmente sair?")) {
@@ -307,4 +307,4 @@ logoutBtn.addEventListener("click", () => {
     location.reload();
   }
 });
-// ...existing code...
+
