@@ -111,6 +111,10 @@ header h1 {
     cursor: pointer;
 }
 
+#logoutBtn {
+  display: none;
+}
+
 .devotional {
     margin-top: 18px;
     color: var(--muted);
@@ -152,7 +156,12 @@ nav.bottom {
     color: var(--muted);
 }
 
-/* small devices */
+@media (max-width: 600px) {
+  #logoutBtn {
+    display: inline-block;
+  }
+}
+
 @media(max-width:420px) {
     body {
         padding: 14px;
