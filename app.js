@@ -293,7 +293,7 @@ installBtn.addEventListener("click", async () => {
   // Register service worker
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker
-      .register("/service-worker.js")
+      .register("./service-worker.js")
       .then(() => console.log("SW registrado"))
       .catch(() => console.log("SW falhou"));
   }

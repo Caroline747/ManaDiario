@@ -21,6 +21,6 @@
     "lang": "pt-BR",
     "name": "Maná Diário",
     "short_name": "Maná Diário",
-    "start_url": "/index.html",
-    "scope": "ManaDiario"
+    "start_url": "./index.html",
+    "scope": "./"
 }
