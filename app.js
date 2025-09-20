@@ -126,6 +126,16 @@ function renderHistory() {
     });
 }
 
+
+const logoutBtn = document.getElementById("logoutBtn");
+logoutBtn.addEventListener("click", () => {
+  if (confirm("Deseja realmente sair?")) {
+    localStorage.clear();
+    location.reload();
+  }
+});
+
+
 /* ====== Core features ====== */
 async function generateRandom() {
   // estratégia: buscar aleatoriamente de FALLBACK_VERSES. Também tentamos busca na API se quisermos implementar referências dinâmicas.
